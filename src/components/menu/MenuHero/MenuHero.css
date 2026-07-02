@@ -1,0 +1,26 @@
+.menu-hero{
+  padding:120px 0 70px;
+  background:#FFF8F3;
+  text-align:center;
+}
+
+.menu-tag{
+  display:inline-block;
+  background:#D4A373;
+  color:white;
+  padding:8px 20px;
+  border-radius:30px;
+  margin-bottom:20px;
+}
+
+.menu-hero h1{
+  font-size:3rem;
+  color:#5B2C1A;
+}
+
+.menu-hero p{
+  max-width:650px;
+  margin:20px auto 0;
+  color:#666;
+  line-height:1.8;
+}

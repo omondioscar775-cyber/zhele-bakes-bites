@@ -1,0 +1,23 @@
+.menu-controls{
+  padding:40px 0;
+}
+
+.controls{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:20px;
+}
+
+.controls input,
+.controls select{
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  font-size:16px;
+}
+
+@media(max-width:768px){
+  .controls{
+    grid-template-columns:1fr;
+  }
+}

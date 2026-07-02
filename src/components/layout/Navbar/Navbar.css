@@ -1,0 +1,168 @@
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+background:#fff;
+box-shadow:0 2px 15px rgba(0,0,0,.06);
+}
+
+.navbar-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+height:85px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-image{
+width:50px;
+height:50px;
+border-radius:50%;
+background:#6B3E26;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:26px;
+color:white;
+}
+
+.logo-text h2{
+margin:0;
+font-size:1.4rem;
+color:#6B3E26;
+}
+
+.logo-text span{
+font-size:.8rem;
+color:#777;
+}
+
+.nav-links{
+display:flex;
+gap:35px;
+}
+
+.nav-links a{
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#D4A373;
+}
+
+.nav-icons{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.nav-icons button{
+width:42px;
+height:42px;
+border:none;
+border-radius:50%;
+background:#F7F4F1;
+cursor:pointer;
+font-size:16px;
+position:relative;
+}
+
+.cart span{
+position:absolute;
+top:-5px;
+right:-5px;
+width:20px;
+height:20px;
+background:#D4A373;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:12px;
+}
+
+.mobile-menu{
+display:none;
+}
+
+@media(max-width:992px){
+
+.nav-links{
+display:none;
+}
+
+.mobile-menu{
+display:block;
+}
+
+.navbar-icons{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.cart-icon{
+  position:relative;
+  background:none;
+  border:none;
+  font-size:24px;
+  cursor:pointer;
+  color:#5B2C1A;
+}
+
+.cart-count{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:#E63946;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.menu-button{
+  display:none;
+  background:none;
+  border:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+
+  .menu-button{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    display:none;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+}
+
+}

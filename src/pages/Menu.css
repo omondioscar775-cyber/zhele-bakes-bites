@@ -1,0 +1,16 @@
+.menu-page {
+  padding: 100px 0;
+  min-height: 70vh;
+}
+
+.menu-page h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.menu-page p {
+  color: #666;
+  max-width: 650px;
+  line-height: 1.8;
+}
