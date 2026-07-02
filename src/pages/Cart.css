@@ -28,4 +28,25 @@
     grid-template-columns:1fr;
 }
 
+.cart-empty-message{
+    background:#fff;
+    padding:40px;
+    border-radius:16px;
+    text-align:center;
+    margin-bottom:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.cart-empty-message h2{
+    color:#5B2C1A;
+    margin-bottom:12px;
+}
+
+.cart-empty-message p{
+    color:#666;
+    max-width:500px;
+    margin:0 auto;
+    line-height:1.7;
+}
+
 }
