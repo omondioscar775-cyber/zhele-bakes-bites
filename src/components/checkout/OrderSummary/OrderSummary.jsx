@@ -1,15 +1,32 @@
+import { Link, useNavigate } from "react-router-dom";
 import { useCart } from "../../../context/CartContext";
-import { Link } from "react-router-dom";
 
 import "./OrderSummary.css";
 
 function OrderSummary() {
+  const navigate = useNavigate();
+
   const {
     cartItems,
     subtotal,
     deliveryFee,
     total,
+    clearCart,
   } = useCart();
+
+  const handlePlaceOrder = () => {
+    if (cartItems.length === 0) {
+      alert("Your cart is empty.");
+      return;
+    }
+
+    // Later we'll validate the checkout form
+    // and send the order to the backend.
+
+    clearCart();
+
+    navigate("/order-success");
+  };
 
   return (
     <aside className="checkout-summary">
@@ -34,6 +51,18 @@ function OrderSummary() {
               <small>
                 Qty: {item.quantity}
               </small>
+
+              {item.selectedSize && (
+                <small>
+                  Size: {item.selectedSize}
+                </small>
+              )}
+
+              {item.selectedFlavour && (
+                <small>
+                  Flavour: {item.selectedFlavour}
+                </small>
+              )}
             </div>
 
             <strong>
@@ -52,7 +81,7 @@ function OrderSummary() {
       </div>
 
       <div className="summary-row">
-        <span>Delivery</span>
+        <span>Delivery Fee</span>
         <strong>KSh {deliveryFee.toLocaleString()}</strong>
       </div>
 
@@ -64,14 +93,21 @@ function OrderSummary() {
       <input
         className="promo-input"
         type="text"
-        placeholder="Promo Code"
+        placeholder="Enter Promo Code"
       />
 
-      <button className="apply-btn">
+      <button
+        className="apply-btn"
+        type="button"
+      >
         Apply Code
       </button>
 
-      <button className="place-order-btn">
+      <button
+        className="place-order-btn"
+        type="button"
+        onClick={handlePlaceOrder}
+      >
         Place Order
       </button>
 

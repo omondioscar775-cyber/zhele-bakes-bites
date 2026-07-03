@@ -1,0 +1,66 @@
+.success-page{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+
+    background:#fff;
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.success-icon{
+    font-size:80px;
+    color:#28a745;
+    margin-bottom:25px;
+}
+
+.success-page h1{
+    color:#5B2C1A;
+    margin-bottom:20px;
+}
+
+.success-page p{
+    color:#666;
+    line-height:1.8;
+}
+
+.order-card{
+    margin:40px 0;
+    padding:30px;
+
+    background:#F7F4F1;
+
+    border-radius:15px;
+}
+
+.order-card h2{
+    color:#E63946;
+    margin:15px 0;
+}
+
+.payment-info{
+    margin-bottom:40px;
+}
+
+.success-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.success-buttons a{
+    padding:15px 25px;
+    background:#5B2C1A;
+    color:#fff;
+    text-decoration:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.success-buttons a:hover{
+    background:#E63946;
+}
