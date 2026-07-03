@@ -1,0 +1,41 @@
+.payment-option{
+    display:flex;
+    gap:18px;
+
+    align-items:flex-start;
+
+    padding:18px;
+
+    margin-bottom:16px;
+
+    border:2px solid #eee;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.payment-option:hover{
+    border-color:#D4A373;
+}
+
+.payment-option input{
+    margin-top:6px;
+    transform:scale(1.2);
+}
+
+.payment-option h3{
+    color:#5B2C1A;
+    margin-bottom:6px;
+}
+
+.payment-option p{
+    color:#777;
+}
+
+.disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
